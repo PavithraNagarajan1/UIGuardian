@@ -1,0 +1,50 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Ignore virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore Jupyter notebooks checkpoints (if used)
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log and runtime files
+*.log
+*.tmp
+
+# Ignore ML model weights and artifacts
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.joblib
+*.pkl
+
+# Ignore screenshots and heavy test outputs
+screenshots/
+*.png
+*.jpg
+
+# Ignore test results and artifacts
+test_output/
+coverage/
+*.coverage
+
+# Ignore Playwright browser cache
+.playwright/
+
+# VS Code & IDE settings
+.vscode/
+.idea/
+
+# Ignore .env files (if storing API keys or secrets)
+.env
