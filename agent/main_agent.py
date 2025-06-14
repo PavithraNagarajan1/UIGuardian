@@ -4,6 +4,7 @@ from rule_checks.structure_check import check_structure
 from rule_checks.functionality_check import check_functionality
 from rule_checks.tracking_check import check_tracking
 from rule_checks.accessibility_check import check_missing_alt, check_contrast
+from rule_checks.check_images_cv import check_images_cv
 import numpy as np
 
 def run_agent(url):
@@ -26,6 +27,8 @@ def run_agent(url):
          # Accessibility checks
         results['accessibility_missing_alt'] = check_missing_alt(page)
         results['accessibility_low_contrast'] = check_contrast(screenshot_path)
+        # open CV image validation
+        results['broken_images_cv'] = check_images_cv(page)
 
         browser.close()
 
